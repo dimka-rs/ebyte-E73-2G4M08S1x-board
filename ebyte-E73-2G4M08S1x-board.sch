@@ -30,7 +30,7 @@ U 1 1 603EC00D
 P 900 1400
 F 0 "J1" H 957 1867 50  0000 C CNN
 F 1 "USB_B_Micro" H 957 1776 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 1050 1350 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1050 1350 50  0001 C CNN
 F 3 "~" H 1050 1350 50  0001 C CNN
 	1    900  1400
 	1    0    0    -1  
@@ -375,12 +375,12 @@ $Comp
 L Device:Crystal Y1
 U 1 1 60519404
 P 4450 1150
-F 0 "Y1" V 4404 1281 50  0000 L CNN
-F 1 "Crystal" V 4495 1281 50  0000 L CNN
+F 0 "Y1" V 4100 1100 50  0000 L CNN
+F 1 "Crystal" V 4200 1050 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_MicroCrystal_MS3V-T1R" H 4450 1150 50  0001 C CNN
 F 3 "~" H 4450 1150 50  0001 C CNN
 	1    4450 1150
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C6
@@ -935,7 +935,7 @@ U 1 1 609FF490
 P 900 2750
 F 0 "J2" H 957 3217 50  0000 C CNN
 F 1 "USB_B_Micro" H 957 3126 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 1050 2700 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1050 2700 50  0001 C CNN
 F 3 "~" H 1050 2700 50  0001 C CNN
 	1    900  2750
 	1    0    0    -1  
