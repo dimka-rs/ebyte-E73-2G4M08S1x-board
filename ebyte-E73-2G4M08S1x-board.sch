@@ -58,9 +58,9 @@ Wire Wire Line
 Text GLabel 7300 1900 2    50   Input ~ 0
 VBUS
 Text GLabel 7300 2000 2    50   BiDi ~ 0
-D-
+NRF_D-
 Text GLabel 7300 2100 2    50   BiDi ~ 0
-D+
+NRF_D+
 $Comp
 L power:GND #PWR012
 U 1 1 603F0117
@@ -451,45 +451,37 @@ Wire Wire Line
 Wire Wire Line
 	2250 1600 2100 1600
 Wire Wire Line
-	2550 900  2550 700 
-Wire Wire Line
-	2550 700  2650 700 
-Wire Wire Line
-	2650 700  2650 900 
-Text GLabel 2750 700  2    50   Input ~ 0
-VDD
-Wire Wire Line
-	2750 700  2650 700 
-Connection ~ 2650 700 
+	2550 900  2550 550 
+Text GLabel 3250 550  2    50   Input ~ 0
+VBUS
 $Comp
 L Device:C C3
 U 1 1 6059A17F
-P 2100 950
-F 0 "C3" H 1985 904 50  0000 R CNN
-F 1 "100n" H 1985 995 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2138 800 50  0001 C CNN
-F 3 "~" H 2100 950 50  0001 C CNN
-	1    2100 950 
+P 2100 800
+F 0 "C3" H 1985 754 50  0000 R CNN
+F 1 "10n" H 1985 845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2138 650 50  0001 C CNN
+F 3 "~" H 2100 800 50  0001 C CNN
+	1    2100 800 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2550 700  2100 700 
+	2550 550  2100 550 
 Wire Wire Line
-	2100 700  2100 800 
-Connection ~ 2550 700 
+	2100 550  2100 650 
 $Comp
 L power:GND #PWR06
 U 1 1 605A0222
-P 2100 1150
-F 0 "#PWR06" H 2100 900 50  0001 C CNN
-F 1 "GND" H 2105 977 50  0000 C CNN
-F 2 "" H 2100 1150 50  0001 C CNN
-F 3 "" H 2100 1150 50  0001 C CNN
-	1    2100 1150
+P 2100 1000
+F 0 "#PWR06" H 2100 750 50  0001 C CNN
+F 1 "GND" H 2105 827 50  0000 C CNN
+F 2 "" H 2100 1000 50  0001 C CNN
+F 3 "" H 2100 1000 50  0001 C CNN
+	1    2100 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 1100 2100 1150
+	2100 950  2100 1000
 Wire Wire Line
 	2650 2450 2650 2350
 Text GLabel 1950 5300 2    50   Input ~ 0
@@ -921,9 +913,9 @@ NoConn ~ 1200 2950
 Text GLabel 1700 2550 2    50   Output ~ 0
 VBUS
 Text GLabel 1350 2850 2    50   BiDi ~ 0
-D-
+NRF_D-
 Text GLabel 1350 2750 2    50   BiDi ~ 0
-D+
+NRF_D+
 Wire Wire Line
 	1350 2750 1200 2750
 Wire Wire Line
@@ -1417,4 +1409,33 @@ Wire Wire Line
 Connection ~ 2650 2350
 Wire Wire Line
 	2650 2350 2650 2100
+Wire Wire Line
+	2650 900  2650 550 
+Wire Wire Line
+	2650 550  3100 550 
+$Comp
+L Device:C C11
+U 1 1 60B742F4
+P 3100 700
+F 0 "C11" H 2985 654 50  0000 R CNN
+F 1 "100n" H 2985 745 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 550 50  0001 C CNN
+F 3 "~" H 3100 700 50  0001 C CNN
+	1    3100 700 
+	-1   0    0    1   
+$EndComp
+Connection ~ 3100 550 
+Wire Wire Line
+	3100 550  3250 550 
+$Comp
+L power:GND #PWR013
+U 1 1 60BDB32C
+P 3100 850
+F 0 "#PWR013" H 3100 600 50  0001 C CNN
+F 1 "GND" H 3105 677 50  0000 C CNN
+F 2 "" H 3100 850 50  0001 C CNN
+F 3 "" H 3100 850 50  0001 C CNN
+	1    3100 850 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
